@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+
+              android:orientation="horizontal" android:background="#000">
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp" app:srcCompat="@mipmap/ic_launcher_round" android:id="@+id/imgProduct"
+            android:layout_weight="1"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView
+                android:text="Id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_id" android:textColor="#FFFFFF"
+                android:textSize="25sp" android:layout_margin="5dp"/>
+        <TextView
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_name" android:textColor="#FFFFFF"
+                android:textSize="25sp" android:layout_margin="5dp"/>
+        <TextView
+                android:text="Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/txt_price" android:textColor="#FFFFFF"
+                android:textSize="25sp" android:layout_margin="5dp"/>
+    </LinearLayout>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/plus" android:id="@+id/img_add"
+            android:layout_weight="1" android:layout_gravity="center"/>
+</LinearLayout>
